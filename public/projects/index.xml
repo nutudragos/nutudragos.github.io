@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Dragos Nutu</title>
+    <link>http://192.168.1.2:8080/projects/</link>
+    <description>Recent content in Projects on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 May 2025 15:21:57 +0300</lastBuildDate>
+    <atom:link href="http://192.168.1.2:8080/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proj2</title>
+      <link>http://192.168.1.2:8080/projects/proj2/</link>
+      <pubDate>Thu, 08 May 2025 15:21:57 +0300</pubDate>
+      <guid>http://192.168.1.2:8080/projects/proj2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proj1</title>
+      <link>http://192.168.1.2:8080/projects/proj1/</link>
+      <pubDate>Thu, 08 May 2025 15:21:51 +0300</pubDate>
+      <guid>http://192.168.1.2:8080/projects/proj1/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
