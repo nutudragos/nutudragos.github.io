@@ -92,3 +92,7 @@ enableThemeToggle = false
   [[menu.main]]
     name       = "Projects"
     url        = "/projects"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
