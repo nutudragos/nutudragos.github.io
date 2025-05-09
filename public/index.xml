@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dragos Nutu</title>
-    <link>https://nutudragos.github.io:1313/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Dragos Nutu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 May 2025 15:00:03 +0300</lastBuildDate>
-    <atom:link href="https://nutudragos.github.io:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://nutudragos.github.io:1313/resume/</link>
+      <link>//localhost:1313/resume/</link>
       <pubDate>Thu, 08 May 2025 15:00:03 +0300</pubDate>
-      <guid>https://nutudragos.github.io:1313/resume/</guid>
+      <guid>//localhost:1313/resume/</guid>
       <description>&lt;h2 id=&#34;vulnerability-analyst&#34;&gt;Vulnerability Analyst&lt;/h2&gt;&#xA;&lt;p&gt;Stefanini&lt;/p&gt;&#xA;&lt;p&gt;Vulnerability analyst stuff&lt;/p&gt;&#xA;&lt;h2 id=&#34;security-analyst&#34;&gt;Security Analyst&lt;/h2&gt;&#xA;&lt;p&gt;Stefanini&lt;/p&gt;&#xA;&lt;p&gt;Security analyst stuff&lt;/p&gt;</description>
     </item>
     <item>
       <title>test2</title>
-      <link>https://nutudragos.github.io:1313/posts/test2/</link>
+      <link>//localhost:1313/posts/test2/</link>
       <pubDate>Wed, 07 May 2025 16:07:27 +0300</pubDate>
-      <guid>https://nutudragos.github.io:1313/posts/test2/</guid>
+      <guid>//localhost:1313/posts/test2/</guid>
       <description></description>
     </item>
     <item>
       <title>test post1</title>
-      <link>https://nutudragos.github.io:1313/posts/test/</link>
+      <link>//localhost:1313/posts/test/</link>
       <pubDate>Wed, 07 May 2025 16:03:36 +0300</pubDate>
-      <guid>https://nutudragos.github.io:1313/posts/test/</guid>
+      <guid>//localhost:1313/posts/test/</guid>
       <description>&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;&#xA;&lt;p&gt;Some post body here&lt;/p&gt;</description>
     </item>
   </channel>
