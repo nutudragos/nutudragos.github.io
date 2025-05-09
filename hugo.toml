@@ -1,4 +1,4 @@
-baseURL      = "https://nutudragos.github.io/"
+baseURL      = "https://nutudragos.github.io"
 title        = "Dragos Nutu"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
