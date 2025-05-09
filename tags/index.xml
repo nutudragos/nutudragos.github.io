@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Dragos Nutu</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://nutudragos.github.io:1313/tags/</link>
     <description>Recent content in Tags on Dragos Nutu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 07 May 2025 16:03:36 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nutudragos.github.io:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test2tag</title>
-      <link>http://localhost:1313/tags/test2tag/</link>
+      <link>https://nutudragos.github.io:1313/tags/test2tag/</link>
       <pubDate>Wed, 07 May 2025 16:03:36 +0300</pubDate>
-      <guid>http://localhost:1313/tags/test2tag/</guid>
+      <guid>https://nutudragos.github.io:1313/tags/test2tag/</guid>
       <description></description>
     </item>
     <item>
       <title>Testtag</title>
-      <link>http://localhost:1313/tags/testtag/</link>
+      <link>https://nutudragos.github.io:1313/tags/testtag/</link>
       <pubDate>Wed, 07 May 2025 16:03:36 +0300</pubDate>
-      <guid>http://localhost:1313/tags/testtag/</guid>
+      <guid>https://nutudragos.github.io:1313/tags/testtag/</guid>
       <description></description>
     </item>
   </channel>
