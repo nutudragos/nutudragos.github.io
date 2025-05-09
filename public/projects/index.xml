@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Dragos Nutu</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 May 2025 15:21:57 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proj2</title>
+      <link>http://localhost:1313/projects/proj2/</link>
+      <pubDate>Thu, 08 May 2025 15:21:57 +0300</pubDate>
+      <guid>http://localhost:1313/projects/proj2/</guid>
+      <description>&lt;h2 id=&#34;le-proj2-h2&#34;&gt;Le Proj2 h2&lt;/h2&gt;&#xA;&lt;p&gt;Some project description here&lt;/p&gt;&#xA;&lt;p&gt;here&amp;rsquo;s some code:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Proj1</title>
+      <link>http://localhost:1313/projects/proj1/</link>
+      <pubDate>Thu, 08 May 2025 15:21:51 +0300</pubDate>
+      <guid>http://localhost:1313/projects/proj1/</guid>
+      <description>&lt;h2 id=&#34;h2-title&#34;&gt;h2 title&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yo&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Also some &lt;!-- raw HTML omitted --&gt;bold text&lt;!-- raw HTML omitted --&gt; here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

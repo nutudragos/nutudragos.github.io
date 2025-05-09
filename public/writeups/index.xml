@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writeups on Dragos Nutu</title>
+    <link>http://localhost:1313/writeups/</link>
+    <description>Recent content in Writeups on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 May 2025 15:36:11 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/writeups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Support</title>
+      <link>http://localhost:1313/writeups/support/</link>
+      <pubDate>Fri, 09 May 2025 15:36:11 +0300</pubDate>
+      <guid>http://localhost:1313/writeups/support/</guid>
+      <description>&lt;p&gt;How I beat support&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
