@@ -5,6 +5,7 @@ theme        = "hello-friend-ng"
 relativeURLs = true
 # canonifyURLs = true
 enableThemeToggle = false
+# pagination.pagerSize = 10
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -18,6 +19,8 @@ enableThemeToggle = false
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
 
+  enableThemeToggle = true
+
   # Enable sharing buttons, if you like
   enableSharingButtons = true
   
@@ -25,9 +28,34 @@ enableThemeToggle = false
   enableGlobalLanguageMenu = false
 
   # Metadata mostly used in document's head
-  description = "My cyberblog"
+  description = ""
   keywords = "homepage, blog, cyber, cyberblog, cybersecurity"
   images = [""]
+  
+  author.name = "Dragos Nutu"
+
+   [params.footer]
+  # trademark = 2025
+    rss = false
+  #  copyright = true
+    author = false
+
+    topText = [""]
+    bottomText = []
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/dragos-nutu-9861642b6"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/nutudragos"
+
+  [[params.social]]
+    name = "email"
+    url  = "nutudragosalexandru[at]proton.me"
+
+
 
 [taxonomies]
     category = "blog"
@@ -43,7 +71,7 @@ enableThemeToggle = false
   # Uncomment this if you want a portrait on your start page
   #
 [params.portrait]
-    path     = "/img/me.jpeg"
+    path     = "/images/me.jpeg"
     alt      = "my portrait"
   #   maxWidth = "50px"
 

@@ -27,7 +27,7 @@
       <link>http://localhost:1313/projects/proj1/</link>
       <pubDate>Thu, 08 May 2025 15:21:51 +0300</pubDate>
       <guid>http://localhost:1313/projects/proj1/</guid>
-      <description>&lt;h2 id=&#34;h2-title&#34;&gt;h2 title&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yo&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Also some &lt;!-- raw HTML omitted --&gt;bold text&lt;!-- raw HTML omitted --&gt; here.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;h2-title&#34;&gt;h2 title&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yo&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Also some &lt;strong&gt;bold text&lt;/strong&gt; here.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./images/uglycat.jpg&#34; alt=&#34;cat image&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

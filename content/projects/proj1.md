@@ -10,4 +10,6 @@ title = 'Proj1'
 print("yo")
 ```
 
-Also some <b>bold text</b> here.
+Also some **bold text** here.
+
+![cat image](/images/uglycat.jpg)
