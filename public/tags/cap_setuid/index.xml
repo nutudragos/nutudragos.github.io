@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cap_setuid on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/cap_setuid/</link>
+    <description>Recent content in Cap_setuid on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/cap_setuid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/cap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/cap/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Obtained initial foothold on system&lt;/li&gt;&#xA;&lt;li&gt;Ran LinPEAS for privilege escalation enumeration&lt;/li&gt;&#xA;&lt;li&gt;Discovered python binary with cap_setuid+ep capability&lt;/li&gt;&#xA;&lt;li&gt;Exploited capabilities to escalate to root&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Linux capabilities enumeration&lt;/li&gt;&#xA;&lt;li&gt;cap_setuid exploitation&lt;/li&gt;&#xA;&lt;li&gt;Python privilege escalation techniques&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;LinPEAS&lt;/li&gt;&#xA;&lt;li&gt;Python&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -sV -sC -p- &amp;lt;IP&amp;gt; -oA nmap_scans/cap&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;&#xA;&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;&#xA;&lt;h2 id=&#34;initial-access&#34;&gt;Initial Access&lt;/h2&gt;&#xA;&lt;p&gt;Initial foothold obtained (details not documented).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;privilege-escalation-to-root&#34;&gt;Privilege Escalation to root&lt;/h1&gt;&#xA;&lt;h2 id=&#34;local-enumeration&#34;&gt;Local enumeration&lt;/h2&gt;&#xA;&lt;p&gt;Ran LinPEAS enumeration script:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

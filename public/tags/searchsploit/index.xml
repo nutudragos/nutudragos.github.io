@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Searchsploit on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/searchsploit/</link>
+    <description>Recent content in Searchsploit on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/searchsploit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/beep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/beep/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extensive enumeration revealed Elastix web application on ports 80/443&lt;/li&gt;&#xA;&lt;li&gt;Used SearchSploit 37637 LFI vulnerability to read config files&lt;/li&gt;&#xA;&lt;li&gt;Extracted admin password from configuration&lt;/li&gt;&#xA;&lt;li&gt;Utilized SearchSploit 37637 to obtain user shell&lt;/li&gt;&#xA;&lt;li&gt;Escalated to root using nmap interactive shell&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Elastix enumeration and exploitation&lt;/li&gt;&#xA;&lt;li&gt;Local File Inclusion (LFI) attacks&lt;/li&gt;&#xA;&lt;li&gt;SearchSploit usage&lt;/li&gt;&#xA;&lt;li&gt;Configuration file analysis&lt;/li&gt;&#xA;&lt;li&gt;Nmap interactive mode privilege escalation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Nmap]]&lt;/li&gt;&#xA;&lt;li&gt;SearchSploit&lt;/li&gt;&#xA;&lt;li&gt;Burp Suite&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows-Xp on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/windows-xp/</link>
+    <description>Recent content in Windows-Xp on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/windows-xp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/legacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/legacy/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Windows XP Professional SP3 identified&lt;/li&gt;&#xA;&lt;li&gt;SMB vulnerable to CVE-2008-4250 (MS08-067) and CVE-2017-0143 (MS17-010)&lt;/li&gt;&#xA;&lt;li&gt;Initially exploited MS17-010 for limited shell&lt;/li&gt;&#xA;&lt;li&gt;Switched to MS08-067 exploit for full administrator access&lt;/li&gt;&#xA;&lt;li&gt;Direct admin rights - both flags obtained immediately&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Windows XP exploitation&lt;/li&gt;&#xA;&lt;li&gt;MS17-010 (EternalBlue) exploitation&lt;/li&gt;&#xA;&lt;li&gt;MS08-067 exploitation&lt;/li&gt;&#xA;&lt;li&gt;Legacy Windows vulnerability assessment&lt;/li&gt;&#xA;&lt;li&gt;NSE script usage for vulnerability detection&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Nmap]]&lt;/li&gt;&#xA;&lt;li&gt;[[CrackMapExec]]&lt;/li&gt;&#xA;&lt;li&gt;MS17-010 exploit (GitHub)&lt;/li&gt;&#xA;&lt;li&gt;MS08-067 exploit (GitHub)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

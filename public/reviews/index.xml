@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reviews on Dragos Nutu</title>
+    <link>http://localhost:1313/reviews/</link>
+    <description>Recent content in Reviews on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Dec 2025 15:43:29 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/reviews/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>INE eCPPTv3</title>
+      <link>http://localhost:1313/reviews/ecppt/</link>
+      <pubDate>Tue, 09 Dec 2025 15:43:29 +0300</pubDate>
+      <guid>http://localhost:1313/reviews/ecppt/</guid>
+      <description>&lt;h2 id=&#34;the-good&#34;&gt;The good&lt;/h2&gt;&#xA;&lt;p&gt;Cert is hands on practical.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-bad&#34;&gt;The bad&lt;/h2&gt;&#xA;&lt;p&gt;Restricted web attack machine with no internet access and broken tools.&#xA;Exam expects you to only use some features of crackmapexec. Doing things a different way is punished by tools being blatantly broken. In my environment win-rm didn&amp;rsquo;t exist at all - these barriers also help you not go down rabbit holes.&lt;/p&gt;&#xA;&lt;p&gt;Course is half decent. Lots of extra content that isn&amp;rsquo;t needed for the exam while also lacking depth on the things that actually come up on the exam.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>INE eJPTv2</title>
+      <link>http://localhost:1313/reviews/ejpt/</link>
+      <pubDate>Thu, 09 May 2024 15:43:29 +0300</pubDate>
+      <guid>http://localhost:1313/reviews/ejpt/</guid>
+      <description>&lt;h2 id=&#34;the-good&#34;&gt;The good&lt;/h2&gt;&#xA;&lt;p&gt;Cert is hands on practical.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-bad&#34;&gt;The bad&lt;/h2&gt;&#xA;&lt;p&gt;Restricted web attack machine with no internet access and broken tools.&#xA;Exam expects you to only use some features of crackmapexec. Doing things a different way is punished by tools being blatantly broken. In my environment win-rm didn&amp;rsquo;t exist at all - these barriers also help you not go down rabbit holes.&lt;/p&gt;&#xA;&lt;p&gt;Course is half decent. Lots of extra content that isn&amp;rsquo;t needed for the exam while also lacking depth on the things that actually come up on the exam.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ISC2 SSCP</title>
+      <link>http://localhost:1313/reviews/isc2-sscp/</link>
+      <pubDate>Thu, 09 May 2024 15:43:29 +0300</pubDate>
+      <guid>http://localhost:1313/reviews/isc2-sscp/</guid>
+      <description>&lt;h2 id=&#34;the-good&#34;&gt;The good&lt;/h2&gt;&#xA;&lt;p&gt;Cert is hands on practical.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-bad&#34;&gt;The bad&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Comptia Network&#43;</title>
+      <link>http://localhost:1313/reviews/comptia-network&#43;/</link>
+      <pubDate>Tue, 09 May 2023 15:43:29 +0300</pubDate>
+      <guid>http://localhost:1313/reviews/comptia-network&#43;/</guid>
+      <description>&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;&#xA;&lt;p&gt;Mike Meyers All in One book and his Udemy course are great preparation. It covers all knowledge areas and a tad more everywhere.&#xA;Did lots of exam questions from various sources, including Jason Dion exam questions which I disected to understand every question and answer even if I already had the answer. These were harder than the exam but gave a sense of confidence in preparation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-good&#34;&gt;The good&lt;/h2&gt;&#xA;&lt;p&gt;Exam is straightforward, simple questions, with occasional attention traps. PBQ&amp;rsquo;s are simpler than real life. This is really not an exam that tries to make you fail. All knowledge areas get tested.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ISC2 CC</title>
+      <link>http://localhost:1313/reviews/isc2-cc/</link>
+      <pubDate>Mon, 09 May 2022 15:43:29 +0300</pubDate>
+      <guid>http://localhost:1313/reviews/isc2-cc/</guid>
+      <description>&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;&#xA;&lt;p&gt;Took their free self paced course which I finished in one week then took the exam.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-good&#34;&gt;The good&lt;/h2&gt;&#xA;&lt;p&gt;It&amp;rsquo;s free and some employers do value it (arguably little). Covers surface level cybersecurity and networking topics and the course platform is machanically nice (you get flashcards, videos, quizzes, etc.), while the content feels repetitive and boring.&lt;/p&gt;&#xA;&lt;p&gt;This is the most entry level cybersecurity certificate I can recommend since it&amp;rsquo;s free and ISC2 is quite reputable.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

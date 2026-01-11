@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Resolution summary [!summary]
+Exploited Searchor 2.4.0 arbitrary command injection on port 80 Enumerated listening ports finding Gitea on port 3000 Found plaintext credentials in .git/config: cody:jh1usoih2bkjaspwe92 Used credentials to SSH as svc user Discovered sudo privilege to run system-checkup.py as root Extracted database password via docker-inspect command Accessed Gitea as administrator to review source code Exploited relative path vulnerability in system-checkup.py Created malicious script in /dev/shm to gain root shell Improved skills Searchor exploitation Internal port enumeration Git configuration analysis Docker inspection Sudo privilege escalation Relative path exploitation GitLab/Gitea enumeration Used tools [[Nmap]] Searchor exploit (GitHub) ss (socket statistics) docker-inspect jq Information Gathering Scanned all TCP ports:
+" />
+<meta name="keywords" content="homepage, blog, cyber, cyberblog, cybersecurity, searchor, cmd-injection, gitea, docker, sudo-abuse" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/writeups/busqueda/" />
+
+
+    <title>
+        
+             :: Dragos Nutu 
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="../../main.min.2729760c629597024c5de34b40ea9f372f2b5a2a192dcdca537b7ddfa483eab8.css" integrity="sha256-Jyl2DGKVlwJMXeNLQOqfNy8rWioZLc3KU3t936SD6rg=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Dragos Nutu">
+  <meta itemprop="description" content="Resolution summary [!summary]
+Exploited Searchor 2.4.0 arbitrary command injection on port 80 Enumerated listening ports finding Gitea on port 3000 Found plaintext credentials in .git/config: cody:jh1usoih2bkjaspwe92 Used credentials to SSH as svc user Discovered sudo privilege to run system-checkup.py as root Extracted database password via docker-inspect command Accessed Gitea as administrator to review source code Exploited relative path vulnerability in system-checkup.py Created malicious script in /dev/shm to gain root shell Improved skills Searchor exploitation Internal port enumeration Git configuration analysis Docker inspection Sudo privilege escalation Relative path exploitation GitLab/Gitea enumeration Used tools [[Nmap]] Searchor exploit (GitHub) ss (socket statistics) docker-inspect jq Information Gathering Scanned all TCP ports:">
+  <meta itemprop="wordCount" content="321">
+  <meta itemprop="image" content="http://localhost:1313/">
+  <meta itemprop="keywords" content="Searchor,Cmd-Injection,Gitea,Docker,Sudo-Abuse">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/">
+  <meta name="twitter:title" content="Dragos Nutu">
+  <meta name="twitter:description" content="Resolution summary [!summary]
+Exploited Searchor 2.4.0 arbitrary command injection on port 80 Enumerated listening ports finding Gitea on port 3000 Found plaintext credentials in .git/config: cody:jh1usoih2bkjaspwe92 Used credentials to SSH as svc user Discovered sudo privilege to run system-checkup.py as root Extracted database password via docker-inspect command Accessed Gitea as administrator to review source code Exploited relative path vulnerability in system-checkup.py Created malicious script in /dev/shm to gain root shell Improved skills Searchor exploitation Internal port enumeration Git configuration analysis Docker inspection Sudo privilege escalation Relative path exploitation GitLab/Gitea enumeration Used tools [[Nmap]] Searchor exploit (GitHub) ss (socket statistics) docker-inspect jq Information Gathering Scanned all TCP ports:">
+
+
+
+    <meta property="og:url" content="http://localhost:1313/writeups/busqueda/">
+  <meta property="og:site_name" content="Dragos Nutu">
+  <meta property="og:title" content="Dragos Nutu">
+  <meta property="og:description" content="Resolution summary [!summary]
+Exploited Searchor 2.4.0 arbitrary command injection on port 80 Enumerated listening ports finding Gitea on port 3000 Found plaintext credentials in .git/config: cody:jh1usoih2bkjaspwe92 Used credentials to SSH as svc user Discovered sudo privilege to run system-checkup.py as root Extracted database password via docker-inspect command Accessed Gitea as administrator to review source code Exploited relative path vulnerability in system-checkup.py Created malicious script in /dev/shm to gain root shell Improved skills Searchor exploitation Internal port enumeration Git configuration analysis Docker inspection Sudo privilege escalation Relative path exploitation GitLab/Gitea enumeration Used tools [[Nmap]] Searchor exploit (GitHub) ss (socket statistics) docker-inspect jq Information Gathering Scanned all TCP ports:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="writeups">
+    <meta property="article:tag" content="Searchor">
+    <meta property="article:tag" content="Cmd-Injection">
+    <meta property="article:tag" content="Gitea">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Sudo-Abuse">
+    <meta property="og:image" content="http://localhost:1313/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                whoami</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="../../projects">Projects</a></li><li><a href="../../resume">Resume</a></li><li><a href="../../reviews">Reviews</a></li><li><a href="../../writeups">Writeups</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/writeups/busqueda/"></a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <h1 id="resolution-summary">Resolution summary</h1>
+<blockquote>
+<p>[!summary]</p>
+<ul>
+<li>Exploited Searchor 2.4.0 arbitrary command injection on port 80</li>
+<li>Enumerated listening ports finding Gitea on port 3000</li>
+<li>Found plaintext credentials in .git/config: cody:jh1usoih2bkjaspwe92</li>
+<li>Used credentials to SSH as svc user</li>
+<li>Discovered sudo privilege to run system-checkup.py as root</li>
+<li>Extracted database password via docker-inspect command</li>
+<li>Accessed Gitea as administrator to review source code</li>
+<li>Exploited relative path vulnerability in system-checkup.py</li>
+<li>Created malicious script in /dev/shm to gain root shell</li>
+</ul>
+</blockquote>
+<h2 id="improved-skills">Improved skills</h2>
+<ul>
+<li>Searchor exploitation</li>
+<li>Internal port enumeration</li>
+<li>Git configuration analysis</li>
+<li>Docker inspection</li>
+<li>Sudo privilege escalation</li>
+<li>Relative path exploitation</li>
+<li>GitLab/Gitea enumeration</li>
+</ul>
+<h2 id="used-tools">Used tools</h2>
+<ul>
+<li>[[Nmap]]</li>
+<li>Searchor exploit (GitHub)</li>
+<li>ss (socket statistics)</li>
+<li>docker-inspect</li>
+<li>jq</li>
+</ul>
+<hr>
+<h1 id="information-gathering">Information Gathering</h1>
+<p>Scanned all TCP ports:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sV -sC -p- &lt;IP&gt; -oA nmap_scans/busqueda
+</span></span></code></pre></div><p>Enumerated open TCP ports:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Port 80 - HTTP (Searchor 2.4.0)</span>
+</span></span></code></pre></div><hr>
+<h1 id="enumeration">Enumeration</h1>
+<h2 id="port-80---http-searchor">Port 80 - HTTP (Searchor)</h2>
+<ul>
+<li>Searchor version 2.4.0 identified</li>
+<li>Added searcher.htb to /etc/hosts</li>
+<li>Searchor &lt;= 2.4.2 vulnerable to arbitrary command injection</li>
+</ul>
+<hr>
+<h1 id="exploitation">Exploitation</h1>
+<h2 id="searchor-240-rce">Searchor 2.4.0 RCE</h2>
+<p>Exploited vulnerability using:
+<a href="https://github.com/nikn0laty/Exploit-for-Searchor-2.4.0-Arbitrary-CMD-Injection">https://github.com/nikn0laty/Exploit-for-Searchor-2.4.0-Arbitrary-CMD-Injection</a></p>
+<p>Obtained initial shell access.</p>
+<hr>
+<h1 id="privilege-escalation-to-root">Privilege Escalation to root</h1>
+<h2 id="local-enumeration">Local enumeration</h2>
+<p>Enumerated listening ports:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ss -lntp
+</span></span></code></pre></div><p>Found services:</p>
+<ul>
+<li>Port 5000 - Searchor</li>
+<li>Port 3000 - Gitea</li>
+<li>Port 222 - SSH</li>
+</ul>
+<p>Checked Apache configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/apache2/sites-available/*
+</span></span></code></pre></div><p>Discovered gitea.searcher.htb (added to /etc/hosts).</p>
+<p>Found .git directory in /var/www/app:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /var/www/app/.git/config
+</span></span></code></pre></div><p>Extracted credentials:</p>
+<ul>
+<li>cody:jh1usoih2bkjaspwe92</li>
+<li>Works for SSH as svc user: svc:jh1usoih2bkjaspwe92</li>
+</ul>
+<h2 id="privilege-escalation-vector">Privilege Escalation vector</h2>
+<p>Checked sudo permissions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo -l
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Can run: /usr/bin/python3 /opt/scripts/system-checkup.py * as root</span>
+</span></span></code></pre></div><p>Explored system-checkup.py usage:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo /usr/bin/python3 /opt/scripts/system-checkup.py help
+</span></span></code></pre></div><p>Used docker-inspect to extract database credentials:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo /usr/bin/python3 /opt/scripts/system-checkup.py docker-inspect <span style="color:#e6db74">&#39;{{json .Config}}&#39;</span> <span style="color:#ae81ff">960</span>
+</span></span></code></pre></div><p>Parsed output with jq:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo -n <span style="color:#e6db74">&#39;&lt;output&gt;&#39;</span> | jq .
+</span></span></code></pre></div><p>Found Gitea database password:</p>
+<ul>
+<li>GITEA__database__PASSWD=yuiu1hoiu4i5ho1uh</li>
+</ul>
+<p>Logged into Gitea as administrator and reviewed system-checkup.py source code.</p>
+<p>Discovered vulnerability: script runs from relative path instead of absolute path.</p>
+<p>Created malicious script in /dev/shm:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /dev/shm
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Created script with same name</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ran system-checkup.py with appropriate argument</span>
+</span></span></code></pre></div><p>Obtained root reverse shell.</p>
+<hr>
+<h1 id="trophy">Trophy</h1>
+<blockquote>
+<p>[!todo] <strong>User.txt</strong>
+Obtained via SSH as svc</p>
+</blockquote>
+<blockquote>
+<p>[!todo] <strong>Root.txt</strong>
+Obtained via relative path exploitation</p>
+</blockquote>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="http://localhost:1313/tags/searchor/">searchor</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/cmd-injection/">cmd-injection</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/gitea/">gitea</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/docker/">docker</a></span>
+        <span class="tag"><a href="http://localhost:1313/tags/sudo-abuse/">sudo-abuse</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+            
+            
+            <span></span>
+        </div>
+    </div>
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="../../bundle.min.ad54ad97364f77ede35def9096b162bb1f0b3973aa50b080f5e82fa147f6882e2a7200d7535adbf9b51bebf939f1c1ca9bbe6be87530092aca720eac4a226fda.js" integrity="sha512-rVStlzZPd&#43;3jXe&#43;QlrFiux8LOXOqULCA9egvoUf2iC4qcgDXU1rb&#43;bUb6/k58cHKm75r6HUwCSrKcg6sSiJv2g=="></script>
+
+
+
+
+    </body>
+</html>

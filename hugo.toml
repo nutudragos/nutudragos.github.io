@@ -93,7 +93,8 @@ enableThemeToggle = false
   # [params.commento]
   #   url = ""
 
-
+[permalinks]
+#  posts     = "/posts/:year/:month/:title/"
 
 
 #[languages]
@@ -124,6 +125,9 @@ enableThemeToggle = false
   [[menu.main]]
     name       = "Projects"
     url        = "/projects"
+[[menu.main]]
+    name       = "Reviews"
+    url        = "/reviews"
 
 [caches]
   [caches.images]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dnspy on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/dnspy/</link>
+    <description>Recent content in Dnspy on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/dnspy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/support/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mounted SMB share support-tools with anonymous access&lt;/li&gt;&#xA;&lt;li&gt;Downloaded .NET binaries for analysis&lt;/li&gt;&#xA;&lt;li&gt;Reversed .NET binary using DNSpy/ILSpy to find hardcoded LDAP password&lt;/li&gt;&#xA;&lt;li&gt;Used credentials to enumerate LDAP&lt;/li&gt;&#xA;&lt;li&gt;Extracted user password from LDAP info field&lt;/li&gt;&#xA;&lt;li&gt;Obtained WinRM access with discovered credentials&lt;/li&gt;&#xA;&lt;li&gt;Enumerated Active Directory for privilege escalation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SMB share mounting in Linux&lt;/li&gt;&#xA;&lt;li&gt;.NET binary reverse engineering&lt;/li&gt;&#xA;&lt;li&gt;DNSpy and ILSpy usage&lt;/li&gt;&#xA;&lt;li&gt;LDAP enumeration with ldapsearch&lt;/li&gt;&#xA;&lt;li&gt;Active Directory enumeration&lt;/li&gt;&#xA;&lt;li&gt;Credential extraction from compiled binaries&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[SMBClient]]&lt;/li&gt;&#xA;&lt;li&gt;[[CrackMapExec]]&lt;/li&gt;&#xA;&lt;li&gt;mount (CIFS)&lt;/li&gt;&#xA;&lt;li&gt;DNSpy / ILSpy&lt;/li&gt;&#xA;&lt;li&gt;ldapsearch&lt;/li&gt;&#xA;&lt;li&gt;evil-winrm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

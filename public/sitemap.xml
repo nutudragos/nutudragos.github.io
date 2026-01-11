@@ -11,13 +11,19 @@
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-05-09T15:43:29+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writeups/support/</loc>
-    <lastmod>2025-05-09T15:36:11+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/projects/proj2/</loc>
     <lastmod>2025-05-08T15:21:57+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/reviews/active/</loc>
+    <lastmod>2025-05-08T15:21:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writeups/active/</loc>
+    <lastmod>2025-05-08T15:21:51+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/proj1/</loc>
+    <lastmod>2025-05-08T15:21:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/reviews/</loc>
     <lastmod>2025-05-08T15:21:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/resume/</loc>
@@ -41,8 +47,118 @@
     <loc>http://localhost:1313/tags/testtag/</loc>
     <lastmod>2025-05-07T16:03:36+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/writeups/beep/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/blue/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/buff/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/busqueda/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/cap/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/cicada/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/devel/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/editor/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/jerry/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/lame/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/legacy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/netmon/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writeups/support/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/active-directory/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/aspx-shell/</loc>
+  </url><url>
     <loc>http://localhost:1313/blog/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/cap_setuid/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/capabilities/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/cmd-injection/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/cve-2018-9276/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/cve-2024-32019/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/cve-2025-24893/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/default-creds/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/distccd/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/dnspy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/elastix/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/eternalblue/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/ftp/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/gitea/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/iis/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/juicy-potato/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/ldap/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/lfi/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/ms08-067/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/ms17-010/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/netdata/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/nmap-privesc/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/password-increment/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/password-spray/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/prtg/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/rce/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/reversing/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/samba/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/searchor/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/searchsploit/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/sebackupprivilege/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/secretsdump/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/seimpersonate/</loc>
+  </url><url>
     <loc>http://localhost:1313/series/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/smb/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/sudo-abuse/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/tomcat/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/war-upload/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/windows-xp/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/xwiki/</loc>
   </url>
 </urlset>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gpp on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/gpp/</link>
+    <description>Recent content in Gpp on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/gpp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/active/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/active/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Anonymous SMB login successful&lt;/li&gt;&#xA;&lt;li&gt;Found Groups.xml file containing GPP encrypted password&lt;/li&gt;&#xA;&lt;li&gt;Decrypted GPP Administrator cpassword&lt;/li&gt;&#xA;&lt;li&gt;Used credentials with PSExec to gain SYSTEM access&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Group Policy Preferences (GPP) exploitation&lt;/li&gt;&#xA;&lt;li&gt;SMB enumeration&lt;/li&gt;&#xA;&lt;li&gt;GPP password decryption&lt;/li&gt;&#xA;&lt;li&gt;PSExec usage&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[SMBClient]]&lt;/li&gt;&#xA;&lt;li&gt;gpp-decrypt&lt;/li&gt;&#xA;&lt;li&gt;[[Impacket]] psexec&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -sV -sC -p- 10.10.10.100 -oA nmap_scans/active&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Enumerated open TCP ports:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# SMB ports open (139, 445)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Active Directory ports&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;&#xA;&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;&#xA;&lt;h2 id=&#34;port-445---smb&#34;&gt;Port 445 - SMB&lt;/h2&gt;&#xA;&lt;p&gt;Anonymous SMB access allowed:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gitea on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/gitea/</link>
+    <description>Recent content in Gitea on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/gitea/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/busqueda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/busqueda/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Exploited Searchor 2.4.0 arbitrary command injection on port 80&lt;/li&gt;&#xA;&lt;li&gt;Enumerated listening ports finding Gitea on port 3000&lt;/li&gt;&#xA;&lt;li&gt;Found plaintext credentials in .git/config: cody:jh1usoih2bkjaspwe92&lt;/li&gt;&#xA;&lt;li&gt;Used credentials to SSH as svc user&lt;/li&gt;&#xA;&lt;li&gt;Discovered sudo privilege to run system-checkup.py as root&lt;/li&gt;&#xA;&lt;li&gt;Extracted database password via docker-inspect command&lt;/li&gt;&#xA;&lt;li&gt;Accessed Gitea as administrator to review source code&lt;/li&gt;&#xA;&lt;li&gt;Exploited relative path vulnerability in system-checkup.py&lt;/li&gt;&#xA;&lt;li&gt;Created malicious script in /dev/shm to gain root shell&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Searchor exploitation&lt;/li&gt;&#xA;&lt;li&gt;Internal port enumeration&lt;/li&gt;&#xA;&lt;li&gt;Git configuration analysis&lt;/li&gt;&#xA;&lt;li&gt;Docker inspection&lt;/li&gt;&#xA;&lt;li&gt;Sudo privilege escalation&lt;/li&gt;&#xA;&lt;li&gt;Relative path exploitation&lt;/li&gt;&#xA;&lt;li&gt;GitLab/Gitea enumeration&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Nmap]]&lt;/li&gt;&#xA;&lt;li&gt;Searchor exploit (GitHub)&lt;/li&gt;&#xA;&lt;li&gt;ss (socket statistics)&lt;/li&gt;&#xA;&lt;li&gt;docker-inspect&lt;/li&gt;&#xA;&lt;li&gt;jq&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

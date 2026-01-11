@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samba on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/samba/</link>
+    <description>Recent content in Samba on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/samba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/lame/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/lame/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Enumerated with [[Nmap]] finding FTP, SSH, SMB, and distccd services&lt;/li&gt;&#xA;&lt;li&gt;vsftpd 2.3.4 on port 21 appeared vulnerable but was a decoy (port 6200 filtered)&lt;/li&gt;&#xA;&lt;li&gt;SMB anonymous login successful but no useful access&lt;/li&gt;&#xA;&lt;li&gt;Exploited distccd v1 on port 3632 (CVE-2004-2687) for initial shell as daemon&lt;/li&gt;&#xA;&lt;li&gt;Enumerated with LinPEAS finding SUID binaries&lt;/li&gt;&#xA;&lt;li&gt;Escalated privileges using nmap interactive mode to root&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Identifying decoy services&lt;/li&gt;&#xA;&lt;li&gt;distccd exploitation&lt;/li&gt;&#xA;&lt;li&gt;SUID binary privilege escalation&lt;/li&gt;&#xA;&lt;li&gt;GTFOBins usage for privilege escalation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Nmap]]&lt;/li&gt;&#xA;&lt;li&gt;LinPEAS&lt;/li&gt;&#xA;&lt;li&gt;Python POC for distccd RCE&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

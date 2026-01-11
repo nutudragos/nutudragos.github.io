@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tomcat on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/tomcat/</link>
+    <description>Recent content in Tomcat on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/jerry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/jerry/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Apache Tomcat 7.0.88 running on port 8080&lt;/li&gt;&#xA;&lt;li&gt;Accessed Tomcat Manager with default credentials (tomcat:s3cret)&lt;/li&gt;&#xA;&lt;li&gt;Generated malicious WAR file with msfvenom&lt;/li&gt;&#xA;&lt;li&gt;Deployed WAR application through manager interface&lt;/li&gt;&#xA;&lt;li&gt;Obtained SYSTEM shell directly&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Apache Tomcat exploitation&lt;/li&gt;&#xA;&lt;li&gt;Default credential discovery&lt;/li&gt;&#xA;&lt;li&gt;WAR file deployment&lt;/li&gt;&#xA;&lt;li&gt;Msfvenom WAR payload generation&lt;/li&gt;&#xA;&lt;li&gt;Tomcat manager interface usage&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Nmap]]&lt;/li&gt;&#xA;&lt;li&gt;[[Msfvenom]]&lt;/li&gt;&#xA;&lt;li&gt;Web browser&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-nmap&#34; data-lang=&#34;nmap&#34;&gt;nmap 10.10.10.95 -sV -sC&#xA;Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-02 02:09 EDT&#xA;Nmap scan report for 10.10.10.95&#xA;Host is up (1.0s latency).&#xA;Not shown: 999 filtered tcp ports (no-response)&#xA;PORT     STATE SERVICE VERSION&#xA;8080/tcp open  http    Apache Tomcat/Coyote JSP engine 1.1&#xA;|_http-title: Apache Tomcat/7.0.88&#xA;|_http-server-header: Apache-Coyote/1.1&#xA;|_http-favicon: Apache Tomcat&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;&#xA;&lt;h2 id=&#34;port-8080---http-apache-tomcat&#34;&gt;Port 8080 - HTTP (Apache Tomcat)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Apache Tomcat 7.0.88&lt;/li&gt;&#xA;&lt;li&gt;Coyote JSP engine 1.1&lt;/li&gt;&#xA;&lt;li&gt;Windows Server 2012 R2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Configuration details:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

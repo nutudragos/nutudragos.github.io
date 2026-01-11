@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Password-Spray on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/password-spray/</link>
+    <description>Recent content in Password-Spray on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/password-spray/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/cicada/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/cicada/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Anonymous SMB connect to /HR share found plaintext password&lt;/li&gt;&#xA;&lt;li&gt;RID brute forced to enumerate domain users&lt;/li&gt;&#xA;&lt;li&gt;Password sprayed with discovered password finding valid account&lt;/li&gt;&#xA;&lt;li&gt;Enumerated domain with ldapdomaindump&lt;/li&gt;&#xA;&lt;li&gt;Found plaintext password in user description field&lt;/li&gt;&#xA;&lt;li&gt;Accessed DEV share with new credentials&lt;/li&gt;&#xA;&lt;li&gt;Found backup script containing hardcoded credentials&lt;/li&gt;&#xA;&lt;li&gt;WinRM access obtained&lt;/li&gt;&#xA;&lt;li&gt;User had SeBackupPrivilege enabled&lt;/li&gt;&#xA;&lt;li&gt;Saved SAM and SYSTEM registry hives&lt;/li&gt;&#xA;&lt;li&gt;Used secretsdump to extract Administrator hash&lt;/li&gt;&#xA;&lt;li&gt;Pass-the-hash with PSExec for SYSTEM access&lt;/li&gt;&#xA;&lt;li&gt;Bonus: Backed up NTDS.dit using diskshadow&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SMB enumeration and file discovery&lt;/li&gt;&#xA;&lt;li&gt;RID cycling for user enumeration&lt;/li&gt;&#xA;&lt;li&gt;Password spraying techniques&lt;/li&gt;&#xA;&lt;li&gt;LDAP enumeration&lt;/li&gt;&#xA;&lt;li&gt;SeBackupPrivilege exploitation&lt;/li&gt;&#xA;&lt;li&gt;Registry hive extraction&lt;/li&gt;&#xA;&lt;li&gt;Hash extraction with secretsdump&lt;/li&gt;&#xA;&lt;li&gt;Pass-the-hash attacks&lt;/li&gt;&#xA;&lt;li&gt;NTDS.dit backup and extraction&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[SMBClient]]&lt;/li&gt;&#xA;&lt;li&gt;[[CrackMapExec]]&lt;/li&gt;&#xA;&lt;li&gt;ldapdomaindump&lt;/li&gt;&#xA;&lt;li&gt;[[Impacket]] secretsdump&lt;/li&gt;&#xA;&lt;li&gt;[[Impacket]] psexec&lt;/li&gt;&#xA;&lt;li&gt;diskshadow&lt;/li&gt;&#xA;&lt;li&gt;robocopy&lt;/li&gt;&#xA;&lt;li&gt;evil-winrm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

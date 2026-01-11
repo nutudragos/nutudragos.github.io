@@ -22,5 +22,299 @@
       <guid>http://localhost:1313/tags/testtag/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Active-Directory</title>
+      <link>http://localhost:1313/tags/active-directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/active-directory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aspx-Shell</title>
+      <link>http://localhost:1313/tags/aspx-shell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aspx-shell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cap_setuid</title>
+      <link>http://localhost:1313/tags/cap_setuid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cap_setuid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Capabilities</title>
+      <link>http://localhost:1313/tags/capabilities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/capabilities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cmd-Injection</title>
+      <link>http://localhost:1313/tags/cmd-injection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cmd-injection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cve-2018-9276</title>
+      <link>http://localhost:1313/tags/cve-2018-9276/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cve-2018-9276/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cve-2024-32019</title>
+      <link>http://localhost:1313/tags/cve-2024-32019/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cve-2024-32019/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cve-2025-24893</title>
+      <link>http://localhost:1313/tags/cve-2025-24893/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cve-2025-24893/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Default-Creds</title>
+      <link>http://localhost:1313/tags/default-creds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/default-creds/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distccd</title>
+      <link>http://localhost:1313/tags/distccd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/distccd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dnspy</title>
+      <link>http://localhost:1313/tags/dnspy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dnspy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elastix</title>
+      <link>http://localhost:1313/tags/elastix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/elastix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eternalblue</title>
+      <link>http://localhost:1313/tags/eternalblue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/eternalblue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ftp</title>
+      <link>http://localhost:1313/tags/ftp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ftp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gitea</title>
+      <link>http://localhost:1313/tags/gitea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gitea/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iis</title>
+      <link>http://localhost:1313/tags/iis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/iis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Juicy-Potato</title>
+      <link>http://localhost:1313/tags/juicy-potato/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/juicy-potato/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ldap</title>
+      <link>http://localhost:1313/tags/ldap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ldap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lfi</title>
+      <link>http://localhost:1313/tags/lfi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lfi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ms08-067</title>
+      <link>http://localhost:1313/tags/ms08-067/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ms08-067/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ms17-010</title>
+      <link>http://localhost:1313/tags/ms17-010/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ms17-010/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Netdata</title>
+      <link>http://localhost:1313/tags/netdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/netdata/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nmap-Privesc</title>
+      <link>http://localhost:1313/tags/nmap-privesc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nmap-privesc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Password-Increment</title>
+      <link>http://localhost:1313/tags/password-increment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/password-increment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Password-Spray</title>
+      <link>http://localhost:1313/tags/password-spray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/password-spray/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prtg</title>
+      <link>http://localhost:1313/tags/prtg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/prtg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rce</title>
+      <link>http://localhost:1313/tags/rce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rce/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reversing</title>
+      <link>http://localhost:1313/tags/reversing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reversing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Samba</title>
+      <link>http://localhost:1313/tags/samba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/samba/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Searchor</title>
+      <link>http://localhost:1313/tags/searchor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/searchor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Searchsploit</title>
+      <link>http://localhost:1313/tags/searchsploit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/searchsploit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sebackupprivilege</title>
+      <link>http://localhost:1313/tags/sebackupprivilege/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sebackupprivilege/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Secretsdump</title>
+      <link>http://localhost:1313/tags/secretsdump/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/secretsdump/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seimpersonate</title>
+      <link>http://localhost:1313/tags/seimpersonate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/seimpersonate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smb</title>
+      <link>http://localhost:1313/tags/smb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/smb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sudo-Abuse</title>
+      <link>http://localhost:1313/tags/sudo-abuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sudo-abuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tomcat</title>
+      <link>http://localhost:1313/tags/tomcat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tomcat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>War-Upload</title>
+      <link>http://localhost:1313/tags/war-upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/war-upload/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows-Xp</title>
+      <link>http://localhost:1313/tags/windows-xp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/windows-xp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xwiki</title>
+      <link>http://localhost:1313/tags/xwiki/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/xwiki/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

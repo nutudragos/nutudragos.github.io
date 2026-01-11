@@ -44,7 +44,7 @@ disableHugoGeneratorInject = false
 #     ID = 'G-MEASUREMENT_ID'
 
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  posts = "/posts/:title/"
 
 [blackfriday]
   hrefTargetBlank = true

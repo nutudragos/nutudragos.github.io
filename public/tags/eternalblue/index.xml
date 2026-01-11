@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eternalblue on Dragos Nutu</title>
+    <link>http://localhost:1313/tags/eternalblue/</link>
+    <description>Recent content in Eternalblue on Dragos Nutu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/eternalblue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/writeups/blue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writeups/blue/</guid>
+      <description>&lt;h1 id=&#34;resolution-summary&#34;&gt;Resolution summary&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[!summary]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Identified Windows 7 Professional 7601 SP1&lt;/li&gt;&#xA;&lt;li&gt;SMB vulnerable to CVE-2017-0143 (EternalBlue/MS17-010)&lt;/li&gt;&#xA;&lt;li&gt;Exploited EternalBlue for SYSTEM access&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;improved-skills&#34;&gt;Improved skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;EternalBlue exploitation&lt;/li&gt;&#xA;&lt;li&gt;SMB vulnerability identification&lt;/li&gt;&#xA;&lt;li&gt;Windows SMB enumeration&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;used-tools&#34;&gt;Used tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[[Nmap]]&lt;/li&gt;&#xA;&lt;li&gt;[[Metasploit]] (EternalBlue exploit)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;information-gathering&#34;&gt;Information Gathering&lt;/h1&gt;&#xA;&lt;p&gt;Scanned all TCP ports:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -sV -sC -p- 10.10.10.40 -oA nmap_scans/blue&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Enumerated open TCP ports:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# SMB ports open (139, 445)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;&#xA;&lt;h1 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h1&gt;&#xA;&lt;h2 id=&#34;port-445---smb&#34;&gt;Port 445 - SMB&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Results:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Operating System: Windows 7 Professional 7601 Service Pack 1&lt;/li&gt;&#xA;&lt;li&gt;SMB vulnerable to CVE-2017-0143 (MS17-010 - EternalBlue)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Vulnerability confirmed using [[Nmap]] NSE script:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
